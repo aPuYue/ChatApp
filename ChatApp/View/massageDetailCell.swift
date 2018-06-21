@@ -53,8 +53,7 @@ class messageDetailCell: UITableViewCell {
             
             self.recipientName.text = username as? String
             
-            if let image = userImg {
-            let ref = Storage.storage().reference(forURL: image as! String)
+            let ref = Storage.storage().reference(forURL: userImg as! String)
             
             ref.getData(maxSize: 100000, completion: { (data, error) in
                 
@@ -71,7 +70,6 @@ class messageDetailCell: UITableViewCell {
                     }
                 }
             })
-            }
         })
     }
 }

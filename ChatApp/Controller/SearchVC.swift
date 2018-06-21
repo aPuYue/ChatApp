@@ -37,9 +37,6 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
         
         searchBar.delegate = self
         
-//        self.tableView.rowHeight = 44;//
-        
-        
         searchBar.returnKeyType = UIReturnKeyType.done
         
         Database.database().reference().child("users").observe(.value, with: { (snapshot) in

@@ -52,7 +52,7 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         }
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             
@@ -112,7 +112,9 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
             
             metadata.contentType = "image/jpeg"
             
-            Storage.storage().reference().child(imgUid).putData(imgData, metadata: metadata) { (metadata, error) in //函数参数是元祖的时候,第一个参数不需要写key
+            let storageRef = Storage.storage().reference().child(imgUid)
+            
+            storageRef.putData(imgData, metadata: metadata) { (metadata: StorageMetadata?, error) in //函数参数是元祖的时候,第一个参数不需要写key
             //Storage.storage().reference().child(imgUid).putData(imgData, metadata: metadata, completion: { (StorageMetadata, error) in  //最后边的一个参数可以不写key,拿出来
                 if error != nil {
                     
@@ -121,7 +123,8 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
                     
                     print("uploaded")
                     
-                    metadata?.storageReference?.downloadURL(completion: {( downloadURL , error) in //因为版本改变了,本来是得到值然后赋值给downloadURL,现在不需要了,直接执行这一行,从括号里面得到downloadURL
+                    storageRef.downloadURL(completion: {( downloadURL , error) in
+                        //因为版本改变了,本来是得到值然后赋值给downloadURL,现在不需要了,直接执行这一行,从括号里面得到downloadURL
                     
                         if let url = downloadURL {
                             
@@ -130,7 +133,6 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
                     }
                     )
                 }
-            
             }
         }
     }

@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>810597340860-g7qc4j4p5s8s19683g6ipsk8pvomfm89.apps.googleusercontent.com</string>
+	<string>1077889338148-tb19quln4kp8nptaaveq2b8997blql4s.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.810597340860-g7qc4j4p5s8s19683g6ipsk8pvomfm89</string>
+	<string>com.googleusercontent.apps.1077889338148-tb19quln4kp8nptaaveq2b8997blql4s</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBJggw4pxxzTsP0noJbPQWPa8c9FhJMovc</string>
+	<string>AIzaSyDr8L_FBQqUcPko0Qw7GoQmusCVMctn2Dw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>810597340860</string>
+	<string>1077889338148</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>access.ChatApp</string>
+	<string>com.access.chatapp</string>
 	<key>PROJECT_ID</key>
-	<string>chatapp-fcc7d</string>
+	<string>chatapp-9b39d</string>
 	<key>STORAGE_BUCKET</key>
-	<string>chatapp-fcc7d.appspot.com</string>
+	<string>chatapp-9b39d.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:810597340860:ios:bf8ec154dd1ba6b0</string>
+	<string>1:1077889338148:ios:e58ad37a1deda058</string>
 	<key>DATABASE_URL</key>
-	<string>https://chatapp-fcc7d.firebaseio.com</string>
+	<string>https://chatapp-9b39d.firebaseio.com</string>
 </dict>
 </plist>

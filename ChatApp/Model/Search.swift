@@ -23,8 +23,6 @@ class Search {
     
     var currentUser = KeychainWrapper.standard.string(forKey: "uid")
     
-    
-    
     var username: String {
         
         return _username
