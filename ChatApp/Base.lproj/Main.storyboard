@@ -132,13 +132,15 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="inr-jB-JU1">
-                                                    <rect key="frame" x="24" y="17" width="72" height="55"/>
+                                                    <rect key="frame" x="24" y="2.5" width="72" height="72"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="cow-Vf-sEF"/>
                                                         <constraint firstAttribute="width" constant="72" id="knR-gt-yOr"/>
+                                                        <constraint firstAttribute="height" constant="72" id="wEs-au-VMq"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e21-6G-YWJ">
-                                                    <rect key="frame" x="142" y="40" width="218" height="24"/>
+                                                    <rect key="frame" x="142" y="40" width="218" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -146,14 +148,14 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="WZI-4G-QdY" firstAttribute="trailing" secondItem="e21-6G-YWJ" secondAttribute="trailing" id="69j-cS-PUs"/>
-                                                <constraint firstItem="inr-jB-JU1" firstAttribute="centerY" secondItem="AVJ-AN-jS4" secondAttribute="centerY" id="6Cu-BU-iRS"/>
+                                                <constraint firstItem="inr-jB-JU1" firstAttribute="centerY" secondItem="AVJ-AN-jS4" secondAttribute="centerY" constant="0.25" id="6Cu-BU-iRS"/>
                                                 <constraint firstItem="WZI-4G-QdY" firstAttribute="leading" secondItem="e21-6G-YWJ" secondAttribute="leading" id="APp-Fp-U77"/>
                                                 <constraint firstItem="e21-6G-YWJ" firstAttribute="top" secondItem="WZI-4G-QdY" secondAttribute="bottom" constant="2" id="Ei9-yJ-OAt"/>
                                                 <constraint firstItem="WZI-4G-QdY" firstAttribute="top" secondItem="AVJ-AN-jS4" secondAttribute="topMargin" constant="6" id="LRG-iA-QIb"/>
                                                 <constraint firstItem="inr-jB-JU1" firstAttribute="leading" secondItem="AVJ-AN-jS4" secondAttribute="leadingMargin" constant="9" id="YbU-9h-GHY"/>
                                                 <constraint firstItem="e21-6G-YWJ" firstAttribute="trailing" secondItem="AVJ-AN-jS4" secondAttribute="trailingMargin" id="cWX-9D-r0Y"/>
                                                 <constraint firstItem="e21-6G-YWJ" firstAttribute="top" secondItem="WZI-4G-QdY" secondAttribute="bottom" constant="2" id="ehk-GZ-4BC"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="inr-jB-JU1" secondAttribute="bottom" constant="6" id="fjo-Ix-4og"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="inr-jB-JU1" secondAttribute="bottom" id="fjo-Ix-4og"/>
                                                 <constraint firstItem="WZI-4G-QdY" firstAttribute="leading" secondItem="inr-jB-JU1" secondAttribute="trailing" constant="46" id="hfy-LJ-Mbx"/>
                                                 <constraint firstItem="e21-6G-YWJ" firstAttribute="leading" secondItem="inr-jB-JU1" secondAttribute="trailing" constant="46" id="q5P-eg-4Dk"/>
                                                 <constraint firstItem="WZI-4G-QdY" firstAttribute="top" secondItem="AVJ-AN-jS4" secondAttribute="topMargin" constant="6" id="v6a-Yl-gZe"/>
@@ -190,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7r-lZ-Cvv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1257" y="401"/>
+            <point key="canvasLocation" x="1256.8" y="400.74962518740631"/>
         </scene>
         <!--MessageVC-->
         <scene sceneID="qOn-IX-rJs">
